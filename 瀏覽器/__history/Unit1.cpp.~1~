@@ -1,0 +1,28 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+Teee *eee;
+//---------------------------------------------------------------------------
+__fastcall Teee::Teee(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+
+
+
+
+void __fastcall Teee::FileListBox1Change(TObject *Sender)
+{
+if (!FileListBox1->SelCount) return;
+   ComboBox1->Text = FileListBox1->FileName;
+
+}
+//---------------------------------------------------------------------------
+

@@ -1,0 +1,65 @@
+object eee: Teee
+  Left = 0
+  Top = 0
+  Caption = '0000'
+  ClientHeight = 306
+  ClientWidth = 355
+  Color = clWindow
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DirectoryListBox1: TDirectoryListBox
+    Left = 32
+    Top = 160
+    Width = 145
+    Height = 97
+    HelpType = htKeyword
+    FileList = FileListBox1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    OnChange = DirectoryListBox1Change
+  end
+  object FilterComboBox1: TFilterComboBox
+    Left = 183
+    Top = 238
+    Width = 145
+    Height = 21
+    TabOrder = 1
+  end
+  object DriveComboBox1: TDriveComboBox
+    Left = 32
+    Top = 135
+    Width = 145
+    Height = 19
+    DirList = DirectoryListBox1
+    TabOrder = 2
+  end
+  object FileListBox1: TFileListBox
+    Left = 183
+    Top = 135
+    Width = 145
+    Height = 97
+    ItemHeight = 13
+    TabOrder = 3
+    OnChange = FileListBox1Change
+  end
+  object ComboBox1: TComboBox
+    Left = 32
+    Top = 52
+    Width = 296
+    Height = 21
+    TabOrder = 4
+    Text = 'ComboBox1'
+    OnChange = ComboBox1Change
+  end
+end

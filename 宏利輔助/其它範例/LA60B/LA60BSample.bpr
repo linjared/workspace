@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="LA60BSample.exe"/>
+    <OBJFILES value="LA60BSample.obj Unit1.obj PLC\CommonUtility.obj PLC\TPLC.obj 
+      PLC\TPLCComm.obj PLC\Super\TPLCBasic.obj PLC\Super\PLCDefine.obj 
+      PLC\Super\TBasicIO.obj PLC\Super\TCommonIO.obj PLC\Scale\TScaleComm.obj 
+      PLC\LA60B\TLA60BIO.obj PLC\LA60B\LA60BRegistry.obj 
+      PLC\LA60B\LA60BUtitily.obj PLC\LA60B\TLA60BCmd.obj 
+      PLC\LA60B\TLA60BConverter.obj PLC\LA60B\TLA60BCPU.obj 
+      PLC\LA50B\TLA50BIO.obj PLC\LA50B\TLA50BConverter.obj PLC\LA50B\TLA50BCPU.obj"/>
+    <RESFILES value="LA60BSample.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Unit1.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="dbrtl.lib adortl.lib MyPackage.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib MyPackage.lib adortl.lib dbrtl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi teedb.bpi 
+      tee.bpi vcldbx.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi MyPackage.bpi"/>
+    <PATHCPP value=".;PLC;PLC\Super;PLC\Scale;PLC\LA60B;PLC\LA50B"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
+    <MAINSOURCE value="LA60BSample.cpp"/>
+    <INCLUDEPATH value="PLC\LA50B;PLC\LA60B;PLC\Scale;PLC\Super;PLC;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="PLC\LA50B;PLC\LA60B;PLC\Scale;PLC\Super;PLC;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-IPLC\LA50B -IPLC\LA60B -IPLC\Scale -IPLC\Super -IPLC 
+      -I&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="LA60BSample.res" FORMNAME="" UNITNAME="LA60BSample.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LA60BSample.cpp" FORMNAME="" UNITNAME="LA60BSample" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit1.cpp" FORMNAME="Form1" UNITNAME="Unit1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\CommonUtility.cpp" FORMNAME="" UNITNAME="CommonUtility" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\TPLC.cpp" FORMNAME="" UNITNAME="TPLC" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\TPLCComm.cpp" FORMNAME="" UNITNAME="TPLCComm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\Super\TPLCBasic.cpp" FORMNAME="" UNITNAME="TPLCBasic" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\Super\PLCDefine.cpp" FORMNAME="" UNITNAME="PLCDefine" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\Super\TBasicIO.cpp" FORMNAME="" UNITNAME="TBasicIO" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\Super\TCommonIO.cpp" FORMNAME="" UNITNAME="TCommonIO" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\Scale\TScaleComm.cpp" FORMNAME="" UNITNAME="TScaleComm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\LA60B\TLA60BIO.cpp" FORMNAME="" UNITNAME="TLA60BIO" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\LA60B\LA60BRegistry.cpp" FORMNAME="" UNITNAME="LA60BRegistry" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\LA60B\LA60BUtitily.cpp" FORMNAME="" UNITNAME="LA60BUtitily" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\LA60B\TLA60BCmd.cpp" FORMNAME="" UNITNAME="TLA60BCmd" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\LA60B\TLA60BConverter.cpp" FORMNAME="" UNITNAME="TLA60BConverter" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\LA60B\TLA60BCPU.cpp" FORMNAME="" UNITNAME="TLA60BCPU" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\LA50B\TLA50BIO.cpp" FORMNAME="" UNITNAME="TLA50BIO" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\LA50B\TLA50BConverter.cpp" FORMNAME="" UNITNAME="TLA50BConverter" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PLC\LA50B\TLA50BCPU.cpp" FORMNAME="" UNITNAME="TLA50BCPU" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1028
+CodePage=950
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=2
+Item0=PLC\LA50B;PLC\LA60B;PLC\Scale;PLC\Super;PLC;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item1=PLC\LA50B;PLC\LA60B;PLC\Scale;PLC\Super;PLC;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\WorkCode\PLCSample\LA50B;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=2
+Item0=PLC\LA50B;PLC\LA60B;PLC\Scale;PLC\Super;PLC;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item1=PLC\LA50B;PLC\LA60B;PLC\Scale;PLC\Super;PLC;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\WorkCode\PLCSample\LA50B;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

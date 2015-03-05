@@ -1,0 +1,2 @@
+REM C:\Progra~1\WinRAR\WinRAR a -IBCK -hpalabtfdp -k -ep1 -ag-YYYY{年}MM{月}DD{日}HH{點}MM{分}SS{秒} ALTFDpG2 @filelist.txt LA_Work\TF\G2\ALTFDp\work\*
+"C:\Program Files\WinRAR\WinRAR" a -hp12345 -k -ep1 -ag-YYYY{年}MM{月}DD{日}HH{點}MM{分}SS{秒} D:\LA_Work\TF\G2\ALTFDp\Back\ALTFDpG2 @ALTFDpG2BackupFile.list LA_Work\TF\G2\ALTFDp\work\*
